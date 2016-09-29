@@ -1,0 +1,31 @@
+body {
+	text-align: center;
+	margin: 10px auto;
+	clear: both;
+	font-family: 'Space Mono', monospace;
+	background-color: #000;
+	color: green;
+}
+
+#clock{
+	font-size: 80px;
+}
+#date{
+	font-size: 30px;
+}
+.morning{
+	background-image: url("img/morning.jpg");
+	width: 100% 100%;
+	background-size: cover;
+
+}
+.afternoon{
+	background-image: url("img/afternoon.jpg");
+	width: 100% 100%;
+	background-size: cover;
+}
+.evening{
+	background-image: url("img/evening.jpg");
+	width: 100% 100%;
+	background-size: cover;
+}

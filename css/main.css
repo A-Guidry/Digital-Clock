@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-	margin: 10px auto;
+	margin:0 auto;
 	clear: both;
 	font-family: 'Space Mono', monospace;
 	background-color: #000;
@@ -9,23 +9,31 @@ body {
 
 #clock{
 	font-size: 80px;
+	margin-top: 10px;
 }
 #date{
 	font-size: 30px;
 }
+#img{
+	text-align: center;
+	height: 300px;
+	width: 50%;
+	margin: 0 auto;
+	clear: both;
+}
 .morning{
-	background-image: url("img/morning.jpg");
-	width: 100% 100%;
-	background-size: cover;
-
+	background: url(../img/morning.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
 }
 .afternoon{
-	background-image: url("img/afternoon.jpg");
-	width: 100% 100%;
-	background-size: cover;
+	background: url(../img/afternoon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .evening{
-	background-image: url("img/evening.jpg");
-	width: 100% 100%;
-	background-size: cover;
+	background: url(../img/evening.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }

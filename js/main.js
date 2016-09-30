@@ -2,7 +2,7 @@ function image() {
 	var now = new Date();
 	var today = now.getDay();
 	var morning = new Date();
-	morning.setHours(05);
+	morning.setHours(01);
 	morning.setMinutes(01);
 	morning.setSeconds(00);
 	var afternoon = new Date();
@@ -13,22 +13,33 @@ function image() {
 	evening.setHours(17);
 	evening.setMinutes(01);
 	evening.setSeconds(00);
+	var headerImg = document.getElementById("img")
 
 	if (today > 0 && today < 6){
 
 		if (morning < now && afternoon > now)
-			{document.write('<img src="img/morning.jpg">')
+			{ 
+				document.getElementById("img").innerHTML
+			headerImg.className = "morning"
+			
+				console.log("Firing msg1")
 		}
-		else if (afternoon == now && evening > now) {
-			document.write('<img src="img/afternoon.jpg">')
+		else if (afternoon <= now && evening > now) {
+			document.getElementById("img").innerHTML
+			headerImg.className = "img-responsive afternoon"
 
+			console.log("Firing msg2")
 		} 
-		else if (evening <= now){
-			document.write('<img src="img/evening.jpg">')
+		else{
+			document.getElementById("img").innerHTML
+			headerImg.className = "evening"
+			console.log("Firing msg3")
 		}
 	}
 }
-document.getElementById("body").addEventListener("onload",image(),false)
+
+ document.getElementById("body").addEventListener("onload",image(),false)
+
 
 
 function display() {
@@ -44,18 +55,15 @@ sec = clockTime(sec)
 if (min < 10)
 	min = "0" + min
 
-var amPm = "am"
 if (hr >= 12){
-	amPM = "pm"
-	// hr = hr - 12
+	hr = hr - 12
 } 
-
 
 if(hr == 0){
 	hr = 12
 }
 
-el.innerHTML = hr + ":" + min + ":" + sec + amPm
+el.innerHTML = hr + ":" + min + ":" + sec 
 var timer = setTimeout(display, 500)
 
 } // end display

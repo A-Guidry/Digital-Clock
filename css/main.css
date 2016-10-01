@@ -21,11 +21,11 @@ body {
 	margin: 0 auto;
 	clear: both;
 }
+
 .morning{
 	background: url(../img/morning.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	
 }
 .afternoon{
 	background: url(../img/afternoon.png);
@@ -37,3 +37,77 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
+@media screen and (min-width: 1100px){
+	#img{
+		height: 350px;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 930px){
+	.morning{
+		background: url(../img/morning@900.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.afternoon{
+		background: url(../img/afternoon@900.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.evening{
+		background: url(../img/evening@900.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+}
+@media screen and (max-width: 799px){
+	#img{
+		height: 300px;
+		width: 60%;
+	}
+}
+@media screen and (max-width: 660px){
+	.morning{
+		background: url(../img/morning@600.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.afternoon{
+		background: url(../img/afternoon@600.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.evening{
+		background: url(../img/evening@600.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	#img{
+		height: 320px;
+		width: 90%;
+	}
+}
+@media screen and (max-width: 540px){
+	.morning{
+		background: url(../img/morning@350.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.afternoon{
+		background: url(../img/afternoon@350.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.evening{
+		background: url(../img/evening@350.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	#img{
+		height: 300px;
+		width: 100%;
+	}
+}
+
+

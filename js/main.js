@@ -15,32 +15,26 @@ function image() {
 	evening.setSeconds(00);
 	var headerImg = document.getElementById("img")
 
-	if (today > 0 && today < 6){
-
 		if (morning < now && afternoon > now)
 			{ 
 				document.getElementById("img").innerHTML
-			headerImg.className = "morning"
-			
+				headerImg.className = "morning img-responsive"
 				console.log("Firing msg1")
 		}
 		else if (afternoon <= now && evening > now) {
 			document.getElementById("img").innerHTML
-			headerImg.className = "img-responsive afternoon"
+			headerImg.className = "afternoon img-responsive"
 
 			console.log("Firing msg2")
 		} 
 		else{
 			document.getElementById("img").innerHTML
-			headerImg.className = "evening"
+			headerImg.className = "evening img-responsive"
 			console.log("Firing msg3")
 		}
 	}
-}
 
  document.getElementById("body").addEventListener("onload",image(),false)
-
-
 
 function display() {
 var today = new Date()
